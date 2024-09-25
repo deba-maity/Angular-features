@@ -1,0 +1,104 @@
+/*
+.example-container {
+  display: flex;
+}
+
+.mat-sidenav {
+  width: 200px;
+}
+
+.mat-sidenav-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidenav {
+  background-color: #333;
+}
+
+.sidenav-button {
+  display: block;
+  color: rgb(21, 21, 104);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidenav-button:hover {
+  background-color: #180909;
+  color: rgb(95, 100, 168);
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar-button {
+  float: left;
+  display: block;
+  color: rgb(22, 14, 14);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  color: rgb(151, 153, 221);
+} */
+
+/* sidenav.component.css */
+
+/* original */
+
+.sidenav {
+  background-color: #333;
+  padding: 20px;
+}
+
+.sidenav-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav-button:hover {
+  background-color: #777;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #020a12;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

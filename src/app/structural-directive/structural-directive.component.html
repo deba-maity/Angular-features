@@ -1,0 +1,64 @@
+<div class="container">
+  <h1>Angular Structural Directives Examples</h1>
+  <p>
+    Structural directives in Angular allow you to manipulate the structure of
+    the DOM by adding or removing elements. The three most common structural
+    directives are:
+    <strong>ngIf</strong>, <strong>ngFor</strong>, and
+    <strong>ngSwitch</strong>.
+  </p>
+
+  <!-- ngIf Example -->
+  <h2>1. ngIf Example</h2>
+  <p>
+    The <strong>*ngIf</strong> directive conditionally includes a template based
+    on the value of an expression. If the value is <strong>true</strong>, the
+    content is displayed; otherwise, it is removed from the DOM.
+  </p>
+  <div>
+    <button (click)="showContent = !showContent" class="toggle-button">
+      Toggle Content
+    </button>
+    <p *ngIf="showContent" class="content">
+      This content is shown conditionally based on the value of
+      <code>showContent</code>.
+    </p>
+  </div>
+
+  <!-- ngFor Example -->
+  <h2>2. ngFor Example</h2>
+  <p>
+    The <strong>*ngFor</strong> directive iterates over a list of items and
+    renders them as a series of elements. Here, we are displaying a list of
+    numbers.
+  </p>
+  <ul class="number-list">
+    <li *ngFor="let number of numbers">{{ number }}</li>
+  </ul>
+
+  <!-- ngSwitch Example -->
+  <h2>3. ngSwitch Example</h2>
+  <p>
+    The <strong>[ngSwitch]</strong> directive is used to conditionally display
+    one of many possible templates based on a matching expression. Here,
+    clicking a button selects an option, and the corresponding message is
+    displayed.
+  </p>
+  <div>
+    <button (click)="selectedOption = 'Option1'" class="switch-button">
+      Option 1
+    </button>
+    <button (click)="selectedOption = 'Option2'" class="switch-button">
+      Option 2
+    </button>
+    <button (click)="selectedOption = 'Option3'" class="switch-button">
+      Option 3
+    </button>
+    <div [ngSwitch]="selectedOption" class="switch-content">
+      <p *ngSwitchCase="'Option1'">Option 1 is selected</p>
+      <p *ngSwitchCase="'Option2'">Option 2 is selected</p>
+      <p *ngSwitchCase="'Option3'">Option 3 is selected</p>
+      <p *ngSwitchDefault>Default option</p>
+    </div>
+  </div>
+</div>

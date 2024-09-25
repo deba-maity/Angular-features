@@ -1,0 +1,161 @@
+<div class="form-container">
+  <h1>Reactive Form in Angular</h1>
+  <p>
+    Reactive forms in Angular are used when you want complete control over the
+    form's validation, structure, and dynamic behavior. They allow you to define
+    the form model in your component's TypeScript and bind it to the template.
+  </p>
+
+  <!-- Reactive Form Example -->
+  <h2>Reactive Form Example</h2>
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" class="form-content">
+    <!-- First Name -->
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input
+        type="text"
+        id="firstName"
+        formControlName="firstName"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          form['firstName'].errors &&
+          (form['firstName'].dirty || form['firstName'].touched)
+        "
+        class="error-message"
+      >
+        First Name is required.
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        id="lastName"
+        formControlName="lastName"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          form['lastName'].errors &&
+          (form['lastName'].dirty || form['lastName'].touched)
+        "
+        class="error-message"
+      >
+        Last Name is required.
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          form['email'].errors && (form['email'].dirty || form['email'].touched)
+        "
+        class="error-message"
+      >
+        Invalid email address.
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          form['password'].errors &&
+          (form['password'].dirty || form['password'].touched)
+        "
+        class="error-message"
+      >
+        Password is required.
+      </div>
+    </div>
+
+    <!-- Address Group -->
+    <div formGroupName="address">
+      <h3>Address</h3>
+      <div class="form-group">
+        <label for="street">Street:</label>
+        <input
+          type="text"
+          id="street"
+          formControlName="street"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          formControlName="city"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input
+          type="text"
+          id="state"
+          formControlName="state"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="zip">ZIP Code:</label>
+        <input
+          type="text"
+          id="zip"
+          formControlName="zip"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <!-- Gender Selection -->
+    <div class="form-group">
+      <label>Gender:</label>
+      <div>
+        <label>
+          <input type="radio" formControlName="gender" value="male" /> Male
+        </label>
+        <label>
+          <input type="radio" formControlName="gender" value="female" /> Female
+        </label>
+        <label>
+          <input type="radio" formControlName="gender" value="other" /> Other
+        </label>
+      </div>
+    </div>
+
+    <!-- Terms and Conditions -->
+    <div class="form-group">
+      <label>
+        <input type="checkbox" formControlName="terms" /> I agree to the terms
+        and conditions
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" [disabled]="reactiveForm.invalid" class="submit-btn">
+      Submit
+    </button>
+  </form>
+</div>

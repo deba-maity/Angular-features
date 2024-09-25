@@ -1,0 +1,30 @@
+<h1>Understanding Angular Pipes</h1>
+
+<h2>Date Pipe Example</h2>
+<p>This demonstrates how to format dates using Angular's date pipe.</p>
+<h3>Current Date:</h3>
+<p>Date: {{ dateToday }} <br /></p>
+<h3>Formatted Date (Uppercase):</h3>
+<p>Date Pipe: {{ dateToday | date | uppercase }}<br /></p>
+<h3>Formatted Date (Short Format, Lowercase):</h3>
+<p>Date Pipe: {{ dateToday | date : "short" | lowercase }} <br /></p>
+
+<h2>Name Pipe Example</h2>
+<p>This demonstrates how to manipulate string data using Angular's pipes.</p>
+<h3>Name:</h3>
+<p>Name: {{ name | uppercase }} <br /></p>
+<h3>Slice Pipe:</h3>
+<p>Name (Sliced): {{ name | slice : 6 }} <br /></p>
+
+<h2>Number Pipe Example</h2>
+<p>This demonstrates how to format numbers using Angular's number pipe.</p>
+<h3>Positive Number:</h3>
+<p>
+  {{ 3.6 | number : "1.0-0" }}
+  <!--will output '4'-->
+</p>
+<h3>Negative Number:</h3>
+<p>
+  {{ -3.6 | number : "1.0-0" }}
+  <!--will output '-4'-->
+</p>

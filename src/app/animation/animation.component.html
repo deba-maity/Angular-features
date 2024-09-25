@@ -1,0 +1,29 @@
+<button type="button" (click)="shakeButton()" [ngClass]="{ shake: isShaking }">
+  Shake Button
+</button>
+
+<button
+  type="button"
+  (click)="showSuccessAnimation()"
+  [ngClass]="{ success: isSuccess }"
+>
+  Success Button
+</button>
+
+<div class="parallax-container">
+  <div class="parallax-background"></div>
+  <div class="content">
+    <h1>Parallax Scrolling. not working</h1>
+    <p>This is a simple example of parallax scrolling effect.</p>
+  </div>
+</div>
+
+<div class="animated-background"></div>
+
+<div class="scroll-reveal">Scroll Down not working</div>
+
+<i class="fas fa-spinner fa-spin"></i>
+
+<div class="loader"></div>
+
+<button class="animated-button">Click Me</button>

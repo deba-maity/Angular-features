@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>Angular Data Binding Examples</h1>
+  <p>
+    Data binding allows communication between the component's TypeScript code
+    and its template (HTML).
+  </p>
+
+  <!-- Interpolation -->
+  <h2>1. Interpolation</h2>
+  <p>
+    Interpolation binds component data into the HTML template. It allows you to
+    display variables inside curly braces.
+  </p>
+  <h3>{{ interpolationExample }}</h3>
+
+  <!-- Property Binding -->
+  <h2>2. Property Binding</h2>
+  <p>
+    Initially, the button is disabled. Clicking the button below will toggle its
+    disabled state.
+  </p>
+  <button [disabled]="isDisabled">Disabled Button</button>
+
+  <!-- Event Binding -->
+  <h2>3. Event Binding</h2>
+  <p>
+    Event binding listens to events and triggers component methods. Here,
+    clicking the button calls the <code>onClick()</code> method.
+  </p>
+  <button (click)="onClick()">Click Me</button>
+  <p>{{ buttonClickMessage }}</p>
+
+  <!-- Two-Way Binding -->
+  <h2>4. Two-Way Data Binding</h2>
+  <p>
+    Two-way binding allows synchronization between the component and the input
+    field. Here, the input value is bound to the
+    <code>inputText</code> variable.
+  </p>
+  <input [(ngModel)]="inputText" type="text" />
+  <p>Input Text: {{ inputText }}</p>
+
+  <!-- ngClass -->
+  <h2>5. ngClass Example</h2>
+  <p>
+    <code>ngClass</code> dynamically adds or removes CSS classes based on a
+    condition. If <code>isSpecial</code> is true, the <code>special</code> class
+    is applied.
+  </p>
+  <div [ngClass]="{ special: isSpecial }">ngClass Example</div>
+
+  <!-- ngStyle -->
+  <h2>6. ngStyle Example</h2>
+  <p>
+    <code>ngStyle</code> applies inline styles dynamically based on a component
+    property.
+  </p>
+  <div [ngStyle]="customStyles">ngStyle Example</div>
+</div>

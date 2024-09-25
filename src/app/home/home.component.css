@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-container {
+  background-color: #f0f0f0;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.content {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background-color: #dd0330;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #bb0025;
+}
+
+/* Flower Animation Container */
+.flower-animation-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #ff1493;
+  border-radius: 50%;
+  animation: burstAnimation 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Keyframes for Burst Animation */
+@keyframes burstAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) scale(2);
+  }
+}
+
+/* Each particle has a different trajectory */
+.particle:nth-child(1) {
+  --x: 100px;
+  --y: -150px;
+}
+
+.particle:nth-child(2) {
+  --x: -100px;
+  --y: -150px;
+}
+
+.particle:nth-child(3) {
+  --x: 150px;
+  --y: -100px;
+}
+
+.particle:nth-child(4) {
+  --x: -150px;
+  --y: -100px;
+}
+
+.particle:nth-child(5) {
+  --x: 100px;
+  --y: 150px;
+}
+
+.particle:nth-child(6) {
+  --x: -100px;
+  --y: 150px;
+}

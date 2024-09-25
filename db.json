@@ -1,0 +1,161 @@
+{
+  "customer": [
+    {
+      "code": 1,
+      "name": "John Doe",
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "status": "active",
+      "id": "71c4"
+    },
+    {
+      "code": 2,
+      "name": "Jane Smith",
+      "phone": "234-567-8901",
+      "email": "jane.smith@example.com",
+      "status": "inactive",
+      "id": "c918"
+    },
+    {
+      "code": 3,
+      "name": "Alice Johnson",
+      "phone": "345-678-9012",
+      "email": "alice.johnson@example.com",
+      "status": "active",
+      "id": "f3be"
+    },
+    {
+      "code": 4,
+      "name": "Bob Brown",
+      "phone": "456-789-0123",
+      "email": "bob.brown@example.com",
+      "status": "inactive",
+      "id": "f487"
+    },
+    {
+      "code": 5,
+      "name": "Charlie Davis",
+      "phone": "567-890-1234",
+      "email": "charlie.davis@example.com",
+      "status": "active",
+      "id": "16ef"
+    },
+    {
+      "code": 6,
+      "name": "Diana Evans",
+      "phone": "678-901-2345",
+      "email": "diana.evans@example.com",
+      "status": "inactive",
+      "id": "f2f7"
+    },
+    {
+      "code": 7,
+      "name": "Evan Foster",
+      "phone": "789-012-3456",
+      "email": "evan.foster@example.com",
+      "status": "active",
+      "id": "4741"
+    },
+    {
+      "code": 8,
+      "name": "Fiona Green",
+      "phone": "890-123-4567",
+      "email": "fiona.green@example.com",
+      "status": "inactive",
+      "id": "7b78"
+    },
+    {
+      "code": 9,
+      "name": "George Harris",
+      "phone": "901-234-5678",
+      "email": "george.harris@example.com",
+      "status": "active",
+      "id": "0d7e"
+    },
+    {
+      "code": 10,
+      "name": "Hannah White",
+      "phone": "012-345-6789",
+      "email": "hannah.white@example.com",
+      "status": "inactive",
+      "id": "39f8"
+    },
+    {
+      "code": 11,
+      "name": "Ian Wright",
+      "phone": "123-456-7890",
+      "email": "ian.wright@example.com",
+      "status": "active",
+      "id": "6d98"
+    },
+    {
+      "id": "4690",
+      "name": "drh",
+      "email": "dsgv",
+      "phone": "dsgv",
+      "status": "dsgv"
+    },
+    {
+      "id": "b5f2",
+      "name": "jg",
+      "email": "jgkj",
+      "phone": "jhghg",
+      "status": "khkh"
+    },
+    {
+      "id": "4cfc"
+    },
+    {
+      "id": "3060",
+      "name": "fdhd"
+    }
+  ],
+
+
+
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "posts": [
+        {
+          "id": 101,
+          "title": "John's First Post",
+          "content": "This is the content of John's first post.",
+          "comments": [
+            {
+              "id": 201,
+              "text": "Great post, John!",
+              "author": "Jane Smith"
+            },
+            {
+              "id": 202,
+              "text": "Thanks for sharing!",
+              "author": "Alice Johnson"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "posts": [
+        {
+          "id": 102,
+          "title": "Jane's Post",
+          "content": "This is the content of Jane's post.",
+          "comments": [
+            {
+              "id": 203,
+              "text": "Nice read!",
+              "author": "John Doe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.parent-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.parent-container h2 {
+  color: #333;
+}
+
+.parent-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.parent-container button:hover {
+  background-color: #45a049;
+}
+
+.parent-container p {
+  font-size: 18px;
+  color: #555;
+}

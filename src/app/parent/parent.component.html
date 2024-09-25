@@ -1,0 +1,10 @@
+<div class="parent-container">
+  <h2>Parent Component</h2>
+  <p>Message from child: {{ messageFromChild }}</p>
+
+  <!-- Child Component - Listening for event from child -->
+  <app-child (messageEvent)="receiveMessage($event)"></app-child>
+
+  <!-- Button to send data to the child component -->
+  <button (click)="sendData()">Send Data</button>
+</div>

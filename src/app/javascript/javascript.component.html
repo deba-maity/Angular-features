@@ -1,0 +1,137 @@
+<div class="container">
+  <h1>JavaScript Array Methods</h1>
+
+  <section>
+    <h2>1. map()</h2>
+    <p>
+      The <code>map()</code> method creates a new array populated with the
+      results of calling a provided function on every element in the calling
+      array.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2); // [2, 4, 6, 8]
+console.log(doubled);</code></pre>
+    <p><strong>Output:</strong> <code>[2, 4, 6, 8]</code></p>
+  </section>
+
+  <section>
+    <h2>2. reduce()</h2>
+    <p>
+      The <code>reduce()</code> method executes a reducer function on each
+      element of the array, resulting in a single output value.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0); // 10
+console.log(sum);</code></pre>
+    <p><strong>Output:</strong> <code>10</code></p>
+  </section>
+
+  <section>
+    <h2>3. filter()</h2>
+    <p>
+      The <code>filter()</code> method creates a new array with all elements
+      that pass the test implemented by the provided function.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+const evens = numbers.filter(num => num % 2 === 0); // [2, 4]
+console.log(evens);</code></pre>
+    <p><strong>Output:</strong> <code>[2, 4]</code></p>
+  </section>
+
+  <section>
+    <h2>4. forEach()</h2>
+    <p>
+      The <code>forEach()</code> method executes a provided function once for
+      each array element.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const fruits = ['apple', 'banana', 'orange'];
+fruits.forEach(fruit => console.log(fruit)); // Logs each fruit</code></pre>
+    <p>
+      <strong>Output:</strong> <code>apple</code>, <code>banana</code>,
+      <code>orange</code> (each on a new line)
+    </p>
+  </section>
+
+  <section>
+    <h2>5. find()</h2>
+    <p>
+      The <code>find()</code> method returns the value of the first element in
+      the array that satisfies the provided testing function.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+const firstEven = numbers.find(num => num % 2 === 0); // 2
+console.log(firstEven);</code></pre>
+    <p><strong>Output:</strong> <code>2</code></p>
+  </section>
+
+  <section>
+    <h2>6. some()</h2>
+    <p>
+      The <code>some()</code> method tests whether at least one element in the
+      array passes the test implemented by the provided function.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+const hasEven = numbers.some(num => num % 2 === 0); // true
+console.log(hasEven);</code></pre>
+    <p><strong>Output:</strong> <code>true</code></p>
+  </section>
+
+  <section>
+    <h2>7. every()</h2>
+    <p>
+      The <code>every()</code> method tests whether all elements in the array
+      pass the test implemented by the provided function.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [2, 4, 6];
+const allEven = numbers.every(num => num % 2 === 0); // true
+console.log(allEven);</code></pre>
+    <p><strong>Output:</strong> <code>true</code></p>
+  </section>
+
+  <section>
+    <h2>8. sort()</h2>
+    <p>
+      The <code>sort()</code> method sorts the elements of an array in place and
+      returns the sorted array.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [4, 2, 3, 1];
+const sorted = numbers.sort(); // [1, 2, 3, 4]
+console.log(sorted);</code></pre>
+    <p><strong>Output:</strong> <code>[1, 2, 3, 4]</code></p>
+  </section>
+
+  <section>
+    <h2>9. splice()</h2>
+    <p>
+      The <code>splice()</code> method changes the contents of an array by
+      removing or replacing existing elements and/or adding new elements in
+      place.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const numbers = [1, 2, 3, 4];
+numbers.splice(1, 2, 5, 6); // [1, 5, 6, 4]
+console.log(numbers);</code></pre>
+    <p><strong>Output:</strong> <code>[1, 5, 6, 4]</code></p>
+  </section>
+
+  <section>
+    <h2>10. join()</h2>
+    <p>
+      The <code>join()</code> method joins all elements of an array into a
+      string and returns this string.
+    </p>
+    <h3>Example:</h3>
+    <pre><code>const fruits = ['apple', 'banana', 'orange'];
+const joined = fruits.join(', '); // "apple, banana, orange"
+console.log(joined);</code></pre>
+    <p><strong>Output:</strong> <code>apple, banana, orange</code></p>
+  </section>
+</div>
